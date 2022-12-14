@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="automation-hono">
+	<parameter name="browser" value="chrome" />
+	<parameter name="siteURL"
+		value="https://pulsev2.honohr.com/login" />
+
+	<parameter name="validUserName" value="developers@hono.ai" />
+	<parameter name="validPassword" value="1234" />
+	<parameter name="invalidUserName" value="abc@hono.ai" />
+	<parameter name="invalidPassword" value="abc123" />
+
+	<test name="Login status">
+		<classes>
+			<!-- <class name="com.hono.test.LoginTest" /> -->
+			<class name="com.hono.project.test.CreateSurveyTest" />
+		</classes>
+	</test>
+</suite>
